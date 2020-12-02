@@ -12,4 +12,6 @@ class WordsApplication : Application() {
     // rather than when the application starts
     val database by lazy { WordRoomDatabase.getDatabase(this, applicationScope) }
     val repository by lazy { WordRepository(database.wordDao()) }
+
+
 }
